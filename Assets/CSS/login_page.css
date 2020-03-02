@@ -1,0 +1,14 @@
+.userID{
+    
+}
+.form_header{
+    background-color: grey;
+
+    width: 100%;
+    height: 7vh;
+    line-height: inherit;
+}
+
+legend{
+    color: tomato;
+}

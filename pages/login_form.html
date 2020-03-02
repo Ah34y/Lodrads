@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="application-name" content="OpenStreetView">
+            <meta name="author" content="Noble Williams">
+            <meta name="description" content="Conception, ">
+            <meta name="keyword" content="Tracking, Shipping, ">
+            <meta http-equiv="refresh" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+            <title>Track</title>
+
+            <!----Css sheet---->
+            <link rel="stylesheet" href="../Assets/CSS/login_page.css">
+            <link rel="stylesheet" href="../Assets/CSS/Index.css">
+            <link rel="stylesheet" href="../Assets/CSS/bootstrap-test.css">
+            <link rel="stylesheet" href="../Assets/CSS/fixed.css">
+            <link rel="stylesheet" href="../Assets/CSS/fontawesome.min.css">
+            <link rel="stylesheet" href="../Assets/CSS/animate.css">
+
+
+            <!-----Bootstrap---->
+            <link rel="stylesheet" href="../Assets/Bootstrap/flaticon.css">
+            <link rel="stylesheet" href="../Assets/Bootstrap/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        </head> 
+
+        <body>
+            <header>
+                <!-------Start of Nav Bar--------->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#" id="flask-brand">Flask</a>
+        
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto topnav-centered">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="trackDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Track</a>
+                                <div class="dropdown-menu" aria-labelledby="trackDropdown">
+                                    <h2 class="dropdown-item" id="track-header"><a href="#">Track your good delivery with escrow
+                                            system</a></h2>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Track by Email</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">All tracking Services</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <h2 class="dropdown-item" id="track-header"><a href="#">CONTACT US</a></h2>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Customs Tools</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Location</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shipping</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <h2 class="dropdown-item" id="track-header"><a href="#">All Shipping Services</a></h2>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Get Transit Services</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <h2 class="dropdown-item" id="track-header"><a href="#">Login</a></h2>
+                                    <h2 class="dropdown-item" id="track-header"><a href="#">Sign Up</a></h2>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+        
+            </header>
+
+            <!--form container-->
+            <div class="container">
+                <div  class="jumbotron"> 
+
+                    <!--form header-->
+                    <form action="" autocomplete="on">
+                        <fieldset>
+                            <legend>Login information</legend>
+                            <div class="userID">
+                                <label for="exampleFormControlInput1">Creat a user ID *</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password *</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" required>
+                                  </div>
+    
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword2">Confirm password *</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" required>
+                                  </div>
+                            </div>
+                        </fieldset><br>
+                        
+
+                        <!--secrete question-->
+                        <fieldset>
+                            <legend>Your secret question</legend>
+                            <div class="select_secret_question">
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Select secrete question *</label>
+                                    <select class="form-control" id="exampleFormControlSelect1" required>
+                                      <option>Please select a secret question</option>
+                                      <option>What is your place of birth ?</option>
+                                      <option>What is your mother's first Name ?</option>
+                                      <option>What is your father's last name ?</option>
+                                      <option>What is the name of your childhood pet ?</option>
+                                      <option>What is the name of a school u attended ?</option>
+                                    </select>
+                                </div>
+                                <label for="secret_answer">Secret Answer</label>
+                                <input type="text" class="form-control" id="secret_answer">
+                            </div>
+                        </fieldset><br>
+                       
+                        
+                        <!--contact information-->
+                        <fieldset>
+                            <legend>Contact information</legend>
+
+                            <div class="form-group">
+                                <label for="name">First Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+        
+                                <label for="last_name">Last Name *</label>
+                                <input type="text" class="form-control" id="last name" required>
+        
+                                <p class="company_crudentials">
+                                    Please do enter your company name (if applicable) and address to facilitate package pickup
+                                </p>
+        
+                                <label for="company_name">Company name</label>
+                                <input type="text" class="form-control" id="company_name">
+        
+                                
+                                <label for="secret_answer">Country / Teritory</label>
+                                        <select class="form-control" id="exampleFormControlSelect1" required>
+                                          <option>Please select</option>
+                                          <option>Afganistan</option>
+                                          <option>Albania</option>
+                                          <option>Angola</option>
+                                          <option>Australia</option>
+                                          <option>Bahamas</option>
+                                          <option>Bangladesh</option>
+                                          <option>Belgium</option>
+                                          <option>Bolivia</option>
+                                          <option>Botswana</option>
+                                          <option>Brazil</option>
+                                          <option>Cambordia</option>
+                                          <option>Cameroon</option>
+                                          <option>Canada</option>
+                                          <option>Cape Vert</option>
+                                          <option>Chat</option>
+                                          <option>China</option>
+                                          <option>Colombia</option>
+                                          <option>Congo</option>
+                                          <option>Denmark</option>
+                                          <option>Dominica</option>
+                                          <option>Ecuador</option>
+                                          <option>Egypt</option>
+                                          <option>Ethopia</option>
+                                          <option>Forea Islands</option>
+                                          <option>Finland</option>
+                                          <option>Israel</option>
+                                          <option>Italy</option>
+                                          <option>Japan</option>
+                                          <option>Jordan</option>
+                                          <option>Kenya</option>
+                                          <option>Uganda</option>
+                                          <option>U.S.A</option>
+                                          <option>Russia</option>
+                                          <option>South Africa</option>
+                                          <option>South Korea</option>
+                                          <option>South Sudan</option>
+                                          <option>Swaziland</option>
+                                          <option>Zambia</option>
+                                          <option>Zimbabwe</option>
+                                        </select>
+        
+                                <label for="zip_code">ZIP / Postal code</label>
+                                <input type="text" class="form-control" id="zip_code" required>
+        
+                                <label for="address1">Address 1 *</label>
+                                <input type="text" class="form-control" id="address1" required>
+        
+        
+                                <label for="address2">Address 2 *</label>
+                                <input type="text" class="form-control" id="address2" required>
+        
+                                <label for="city">City *</label>
+                                <input type="text" class="form-control" id="city" required>
+        
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+        
+                                <label for="re_enter_email">Re-enter e-mail</label>
+                                <input type="email" class="form-control" id="re_enter_email" placeholder="name@example.com" required>
+        
+                                
+                              </div>
+
+                              <div class="phone_number1">
+                                <label for="phone_number">Phone *</label>
+                                <input type="tel" id="phone_number1">
+
+                                <label for="phone_number2">Fix </label>
+                                <input type="tel" id="phone_number2">
+                              </div>
+                             
+                        </fieldset><br>
+                
+                        <fieldset>
+                            <legend>Terms and Conditions</legend>
+                           
+                            <p class="terms_conditions"> I have read, understood and agree to be bound by the following. I also understand Flask intend to use my informations.</p>
+                            <ul>
+                                <li><a href="#">Flask.com  Terms and conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>                     
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-danger">I do not Accept</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+              </div>
+            </div>
+            
+        </body>
+    </html>
